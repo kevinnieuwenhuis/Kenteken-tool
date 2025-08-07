@@ -106,30 +106,26 @@ def add_background(logo_path):
         background-repeat: no-repeat;
     }}
 
-    /* Standaardteksten (labels, titels, knoppen) */
     label, h1, h2, h3, h4, h5, h6,
-    .stButton > button, .stDownloadButton > button {{
+    .stButton > button, .stDownloadButton > button {
         color: black !important;
-    }}
+    }
 
-    /* Inputvelden met witte tekst en donkergrijze achtergrond */
     .stTextInput input,
     .stSelectbox div[data-baseweb="select"] div,
-    .stNumberInput input {{
+    .stNumberInput input {
         color: white !important;
         background-color: rgba(0,0,0,0.7) !important;
-    }}
+    }
 
-    /* Placeholdertekst */
-    ::placeholder {{
+    ::placeholder {
         color: #ccc !important;
         opacity: 1 !important;
-    }}
+    }
 
-    /* Meldingsvakken */
-    .stAlert div {{
+    .stAlert div {
         color: white !important;
-    }}
+    }
     </style>
     """
     st.markdown(page_bg, unsafe_allow_html=True)
